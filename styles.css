@@ -1,0 +1,85 @@
+/* Add these styles */
+.grid .start {
+    background-color: green;
+}
+
+.grid .target {
+    background-color: red;
+}
+/* Add these styles */
+.grid .visited {
+    background-color: #ffeb3b; /* Yellow for visited nodes */
+}
+
+.grid .shortest-path {
+    background-color: #00e676; /* Green for shortest path */
+}
+.grid .wall {
+    background-color: black;
+}
+
+
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: #61dafb;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Ensure the grid is fully visible within the viewport */
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+}
+
+/* Header styling */
+.header {
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #282c34;
+    border: 2px solid #61dafb;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #282c34;
+    color: #61dafb;
+    border-color: #61dafb;
+}
+
+/* Grid container styling */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+    gap: 1px;
+    justify-content: center; /* Center the grid horizontally */
+}
+
+/* Individual grid cell styling */
+.grid div {
+    width: 30px;
+    height: 30px;
+    background-color: #ecf9ea;
+    border: 1px solid #61dafb;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.grid div:hover {
+    background-color: #61dafb;
+    border-color: #282c34;
+}
